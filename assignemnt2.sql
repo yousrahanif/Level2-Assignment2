@@ -73,7 +73,7 @@ where extract (year from discovery_date) < 1800;
 SELECT sighting_id ,
 CASE 
 when extract(HOUR from sighting_time) < 12 then 'Morning'
-when extract(HOUR from sighting_time) BETWEEN 12 and 16 then 'Afternoon'
+when extract(HOUR from sighting_time) BETWEEN 12 and 17 then 'Afternoon'
 Else 'Evening'
 END as time_of_day
 from sightings;
